@@ -1,4 +1,13 @@
+.traffic-light{
+    width: 150px;
+    height: 600px;
+    color: black;
+    margin: auto;
+}
 
+.red {
+    color: red;
+}
 /* 
 
     You can write your own styles here...
