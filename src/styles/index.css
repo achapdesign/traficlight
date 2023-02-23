@@ -1,12 +1,27 @@
 .traffic-light{
+    background-color: grey;
     width: 150px;
-    height: 600px;
-    color: black;
     margin: auto;
+    z-index: -1;
+    border-radius: 10px;
 }
 
 .red {
     color: red;
+    scale: 3;
+    padding: 1rem;
+}
+
+.yellow{
+    color: yellow;
+    scale: 3;
+    padding: 1rem;
+}
+
+.green {
+    color: green;
+    scale: 3;
+    padding: 1rem;
 }
 /* 
 
