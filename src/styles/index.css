@@ -2,7 +2,8 @@
     background-color: grey;
     width: 150px;
     margin: auto;
-    z-index: -1;
+    z-index: 0;
+    top: 50%;
     border-radius: 10px;
 }
 
@@ -10,19 +11,25 @@
     color: red;
     scale: 3;
     padding: 1rem;
+    right: 50%;
+
 }
 
 .yellow{
     color: yellow;
     scale: 3;
     padding: 1rem;
+    right: 50%;
+
 }
 
 .green {
     color: green;
     scale: 3;
     padding: 1rem;
+    right: 50%;
 }
+
 /* 
 
     You can write your own styles here...
