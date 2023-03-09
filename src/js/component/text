@@ -1,0 +1,72 @@
+import React from 'react'
+import { useState, useEffect } from 'react';
+
+function MyComponent() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCount(count + 1);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [count]);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+    </div>
+  );
+}
+useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (color) {
+        case 'red':
+          setColor('green');
+          break;
+        case 'yellow':
+          setColor('red');
+          break;
+        case 'green':
+          setColor('yellow');
+          break;
+        default:
+          setColor('red');
+      }
+    }, 2000);
+function Trafficlight() {    
+    useEffect(() => {
+      const intervalHandle = setInterval(() => {
+      setCount(count + 1);
+    }, 1000); 
+
+      return function cleanup() {
+        clearInterval(intervalHandle)
+      }
+    }, [red, green, yellow])
+  
+    // Your code
+  }
+
+    const [color, setColor] = useState("red");
+    document.title = `${color} light!`;
+  return (
+    <div className="container">
+        <div className="traffic-light">
+          <div className="container">
+            <div className="red">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div className="yellow">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div className="green">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  )
+}
+
+export default Trafficlight
